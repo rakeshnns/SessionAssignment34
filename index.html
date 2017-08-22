@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3.4</title>
+</head>
+ <style>
+
+    /* Form Styling */
+    form{
+        background-image: url(college.png); /* Backround Image setting part */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+    }
+    /* Header styling part */
+ 	h1{ width: 700px;
+ 		margin:auto;
+ 	   }
+ 	 /* Input tag styling part */  
+ 	 input{
+ 		  float: right;          /*Align the Input to Right side of document */
+ 		  display: inline-block;
+ 		  
+ 	     }
+ </style>
+<body>
+
+  <h1>ADMISSION FORM FOR BBA - FISAT - 2017-18</h1><br><br><br><br><br><br>
+  <!-- Form Start -->
+  <form action="" method="POST">
+  	First Name.....:
+  	            <input type="text" name="First Name" minlength="3"><br><br>     <!-- Minimum character allow is 3 -->
+
+  	Middle Name..:
+  	            <input type="text" name="Middle Name" minlength="3"> <br><br>   <!-- Minimum character allow is 3 --> 
+  	Last Name.....:
+  	            <input type="text" name="Last Name" minlength="3"> <br><br>     <!-- Minimum character allow is 3 --> 
+  	Course Applied:
+  	            <input type="text" name="Course" value="BBA" disabled><br><br>  <!-- Disabled input tag only course allowed is BBA --> 
+  	Age...........:
+  	            <input type="number" name="Age" max="24" min="15"><br><br>      <!-- Range of age is limited from 15 to 24 -->
+  	User ID.......:
+  	            <input type="text" name="UserID" maxlength=10><br><br>          <!-- Used ID should be of max length 10 char-->   
+  	Mobile Number.:
+  	            <input type="number" name="Mobile" max="9999999999"><br><br>    <!-- Mobile number should of max value 9999999999 -->           
+    <em>**Password will be sent to this number**</em><br><br>
+
+
+  	<input type="Submit" Value="Submit" style="background-color: transparent;font-weight: bold">            
+
+  </form>
+  <!-- Form End -->
+
+</body>
+</html>
